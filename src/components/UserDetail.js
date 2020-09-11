@@ -12,7 +12,14 @@ const UserDetails = ({ userId, fetchUser, users }) => {
   if (!renderUser) {
     return null;
   }
-  return <div className="ui header">{renderUser.name}</div>;
+  return (
+    <div>
+      <div className="header">
+        <i className="small user middle aligned icon"></i>
+        {renderUser.name}
+      </div>
+    </div>
+  );
 };
 
 const mapStateToProps = (state) => {

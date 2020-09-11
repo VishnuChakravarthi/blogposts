@@ -12,9 +12,9 @@ const PostList = ({ fetchPosts, posts }) => {
   const renderedList = posts.map((post) => {
     return (
       <div className="item" key={post.id}>
-        <i className="large github middle aligned icon"></i>
+        <i className="large edit middle aligned icon"></i>
         <div className="content">
-          <a className="header">{post.title}</a>
+          <div className="ui header">{post.title}</div>
           <div className="description">{post.body}</div>
           <UserDetails userId={post.userId} />
         </div>
